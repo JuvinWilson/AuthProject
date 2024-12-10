@@ -1,0 +1,32 @@
+{% extends "homelayout.html" %}
+{% block content %}
+{% load static %}
+<div class="card">
+    <img src="{% static 'images/homebg.jpg' %}" class="card-img img-fluid w-100" style="height: 400px;">  
+</div>
+<div class="container mt-4 mb-4">
+    <h2 class="text-center text-danger">Arts Of Kerala</h2>
+    <div class="card-deck mt-5">
+        <div class="card">
+          <img src="{% static 'images/kathakali.jpg' %}" class="card-img-top img-fluid w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kathakali</h5>
+            <p class="card-text">Kathakali is a classical Indian dance-drama that combines acting, music, and dance to tell stories:</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static 'images/theyyam.jpg' %}" class="card-img-top img-fluid w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Theyyam</h5>
+            <p class="card-text">Theyyam is a sacred ritual art form that combines dance, music, mime, and theater to depict gods, goddesses, and ancestral spirits. It's practiced in the northern regions of Kerala and parts of Karnataka, India.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

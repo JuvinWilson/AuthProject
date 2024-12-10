@@ -1,0 +1,25 @@
+{% extends 'homelayout.html' %}
+{% block content %}
+    {% load static %}
+    {% for message in messages %}
+        <h1 class="text-center text-danger" style="margin-top: 60px;">{{message}}</h1>
+    {% endfor %}
+    <h3 class="text-primary" style="margin-top: 70px;"><u>About Kathakali</u></h3>
+    <div class="card" style="margin-top: 30px;">
+        <img src="{% static 'images/kathakali.jpg' %}" class="card-img-top img-fluid w-100" style="height:400px"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">കഥകളി</h5>
+          <p class="card-text">ലോകമാകെ കേരളത്തെ പ്രശസ്തമാക്കിയ കലാരൂപമാണ് കഥകളി. 300 വര്‍ഷത്തെ പഴക്കമേയുള്ളൂ ഈ കലാരൂപത്തിനെങ്കിലും അതിന്റെ ഗാംഭീര്യവും, നൃത്ത, സംഗീത മേള സാകല്യവും, രൂപഭംഗിയും  ഒരു ഉത്തമ കലാരൂപമാക്കി മാറ്റുന്നു. പുരാണങ്ങളില്‍ നിന്നും ഐതിഹ്യങ്ങളില്‍ നിന്നുമുള്ള കഥകളാണ് പ്രമേയമാക്കുന്നത്. നാട്യഭംഗിയും സംഗീത മേന്മയും വേഷഭംഗിയുടെ അഭൗമ സാന്നിദ്ധ്യവും ഇതിനെ കലാസ്വാദകരുടെ ആരാധനാ രൂപമാക്കി മാറ്റുന്നുണ്ട്. നൃത്ത നാട്യചലനങ്ങള്‍,  മുദ്രകളുടെ താളാത്മകത സൃഷ്ടിക്കുന്ന ഭാഷ, മുഖത്തു വിടരുന്ന ഭാവപ്രകടനങ്ങള്‍, മുഖത്തേപ്പില്‍ പ്രത്യേകം ശ്രദ്ധേയമാകുന്ന കണ്ണുകളുടെ ചലനങ്ങള്‍ എന്നിവ കാഴ്ചക്കാരെ മറ്റൊരു മാസ്മര പ്രപഞ്ചത്തിലേക്കു കൊണ്ടു പോകുന്നു. ഓരോ രംഗം തീരുവോളം കണ്ണുകള്‍ക്ക് ആനന്ദോല്‍സവമാണ് കഥകളി നടനം..</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <a href="{% url 'logout' %}" class="btn btn-danger text-light mt-3 w-100" style="margin:auto;">Logout</a>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+{% endblock %}
